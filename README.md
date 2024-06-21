@@ -32,7 +32,7 @@ The PX4 SITL with custom coordinates with UAV physics simulation in Gazebo was l
 ```
 docker run --rm -it --env PX4_HOME_LAT=49.7218178 --env PX4_HOME_LON=13.3645208 --env PX4_HOME_ALT=350.0 jonasvautherin/px4-gazebo-headless
 ```
-The missions where afterword uploaded by QGroundControl and downloaded using `download_and_safe.py`, which also saved missions into folder `missions` using `cloudpickle` library.
+The missions where afterword uploaded by QGroundControl and downloaded using `download_and_save.py`, which also saved missions into folder `missions` using `cloudpickle` library.
 
 Resulting missions together with battery management station locations are depicted in following map:
 !["Missions in City Park"](imgs/map.png)
