@@ -1,0 +1,890 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: graphviz version 2.43.0 (0)
+%%Title: dfd2
+%%Pages: 1
+%%BoundingBox: 36 36 835 545
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 835 545
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 799 509 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% cluster_level0
+gsave
+0 0 0.82745 graphcolor
+newpath 348.8184 8 moveto
+348.8184 182 lineto
+512.8184 182 lineto
+512.8184 8 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.82745 graphcolor
+newpath 348.8184 8 moveto
+348.8184 182 lineto
+512.8184 182 lineto
+512.8184 8 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+422.3184 166.8 moveto 17 (A*) alignedtext
+grestore
+% cluster_level1
+gsave
+0.53725 0.24706 0.90196 graphcolor
+newpath 421.8184 190 moveto
+421.8184 313 lineto
+782.8184 313 lineto
+782.8184 190 lineto
+closepath fill
+1 setlinewidth
+filled
+0.53725 0.24706 0.90196 graphcolor
+newpath 421.8184 190 moveto
+421.8184 313 lineto
+782.8184 313 lineto
+782.8184 190 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+497.8184 297.8 moveto 209 (Battery Management Station) alignedtext
+grestore
+% cluster_level2
+gsave
+0.16471 0.15686 0.98039 graphcolor
+newpath 26.8184 190 moveto
+26.8184 414.5 lineto
+413.8184 414.5 lineto
+413.8184 190 lineto
+closepath fill
+1 setlinewidth
+filled
+0.16471 0.15686 0.98039 graphcolor
+newpath 26.8184 190 moveto
+26.8184 414.5 lineto
+413.8184 414.5 lineto
+413.8184 190 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+204.8184 399.3 moveto 31 (UAV) alignedtext
+grestore
+% cluster_level3
+gsave
+0.97255 0.28627 1 graphcolor
+newpath 434.8184 321 moveto
+434.8184 492.5 lineto
+670.8184 492.5 lineto
+670.8184 321 lineto
+closepath fill
+1 setlinewidth
+filled
+0.97255 0.28627 1 graphcolor
+newpath 434.8184 321 moveto
+434.8184 492.5 lineto
+670.8184 492.5 lineto
+670.8184 321 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+525.3184 477.3 moveto 55 (Battery) alignedtext
+grestore
+% a_data
+gsave
+0.41569 0.035294 1 nodecolor
+newpath 356.3184 16.5 moveto
+356.3184 52.5 lineto
+505.3184 52.5 lineto
+505.3184 16.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 356.3184 16.5 moveto
+356.3184 52.5 lineto
+505.3184 52.5 lineto
+505.3184 16.5 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+364.3184 30.8 moveto 5 ( ) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 377.3184 16.5 moveto
+377.3184 52.5 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+385.3184 30.8 moveto 112 (global schedule) alignedtext
+grestore
+% a_funs
+gsave
+0.090196 0.22745 1 nodecolor
+newpath 371.8184 89.5 moveto
+371.8184 89.5 489.8184 89.5 489.8184 89.5 curveto
+495.8184 89.5 501.8184 95.5 501.8184 101.5 curveto
+501.8184 101.5 501.8184 138.5 501.8184 138.5 curveto
+501.8184 144.5 495.8184 150.5 489.8184 150.5 curveto
+489.8184 150.5 371.8184 150.5 371.8184 150.5 curveto
+365.8184 150.5 359.8184 144.5 359.8184 138.5 curveto
+359.8184 138.5 359.8184 101.5 359.8184 101.5 curveto
+359.8184 95.5 365.8184 89.5 371.8184 89.5 curveto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 371.8184 89.5 moveto
+371.8184 89.5 489.8184 89.5 489.8184 89.5 curveto
+495.8184 89.5 501.8184 95.5 501.8184 101.5 curveto
+501.8184 101.5 501.8184 138.5 501.8184 138.5 curveto
+501.8184 144.5 495.8184 150.5 489.8184 150.5 curveto
+489.8184 150.5 371.8184 150.5 371.8184 150.5 curveto
+365.8184 150.5 359.8184 144.5 359.8184 138.5 curveto
+359.8184 138.5 359.8184 101.5 359.8184 101.5 curveto
+359.8184 95.5 365.8184 89.5 371.8184 89.5 curveto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+395.3184 135.3 moveto 71 (Functions) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 359.8184 127.5 moveto
+501.8184 127.5 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+367.8184 112.3 moveto 126 (initialize problem) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+379.3184 97.3 moveto 103 ( plan missions) alignedtext
+grestore
+% a_funs->a_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 430.8184 89.3259 moveto
+430.8184 80.7565 430.8184 71.4444 430.8184 63.0125 curveto
+stroke
+0 0 0 edgecolor
+newpath 434.3185 62.9249 moveto
+430.8184 52.9249 lineto
+427.3185 62.9249 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 434.3185 62.9249 moveto
+430.8184 52.9249 lineto
+427.3185 62.9249 lineto
+closepath stroke
+grestore
+% schedule
+gsave
+0.33333 0.058824 1 nodecolor
+newpath 441.3184 217 moveto
+441.3184 217 604.3184 217 604.3184 217 curveto
+610.3184 217 616.3184 223 616.3184 229 curveto
+616.3184 229 616.3184 251 616.3184 251 curveto
+616.3184 257 610.3184 263 604.3184 263 curveto
+604.3184 263 441.3184 263 441.3184 263 curveto
+435.3184 263 429.3184 257 429.3184 251 curveto
+429.3184 251 429.3184 229 429.3184 229 curveto
+429.3184 223 435.3184 217 441.3184 217 curveto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 441.3184 217 moveto
+441.3184 217 604.3184 217 604.3184 217 curveto
+610.3184 217 616.3184 223 616.3184 229 curveto
+616.3184 229 616.3184 251 616.3184 251 curveto
+616.3184 257 610.3184 263 604.3184 263 curveto
+604.3184 263 441.3184 263 441.3184 263 curveto
+435.3184 263 429.3184 257 429.3184 251 curveto
+429.3184 251 429.3184 229 429.3184 229 curveto
+429.3184 223 435.3184 217 441.3184 217 curveto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+472.3184 247.8 moveto 101 (local schedule) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 429.3184 240 moveto
+616.3184 240 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+437.3184 224.8 moveto 171 (time of battery changes) alignedtext
+grestore
+% a_funs->schedule
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 459.8984 150.6716 moveto
+474.7155 168.3233 492.1567 190.6721 505.0136 208.4726 curveto
+stroke
+0 0 0 edgecolor
+newpath 502.2844 210.6745 moveto
+510.9253 216.8051 lineto
+507.9935 206.624 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 502.2844 210.6745 moveto
+510.9253 216.8051 lineto
+507.9935 206.624 lineto
+closepath stroke
+grestore
+% station_data
+gsave
+0.41569 0.035294 1 nodecolor
+newpath 634.8184 198.5 moveto
+634.8184 281.5 lineto
+774.8184 281.5 lineto
+774.8184 198.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 634.8184 198.5 moveto
+634.8184 281.5 lineto
+774.8184 281.5 lineto
+774.8184 198.5 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+642.8184 236.3 moveto 5 ( ) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 655.8184 198.5 moveto
+655.8184 281.5 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+706.8184 266.3 moveto 17 (ID) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+663.8184 251.3 moveto 103 ( station status) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+680.3184 236.3 moveto 70 ( batteries) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+673.8184 221.3 moveto 83 ( no. of slots) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+675.8184 206.3 moveto 79 ( swap time) alignedtext
+grestore
+% station_data->a_funs
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 642.1108 198.4495 moveto
+636.6789 195.4458 631.2016 192.5847 625.8184 190 curveto
+589.5697 172.5954 547.7248 157.2155 512.1141 145.4189 curveto
+stroke
+0 0 0 edgecolor
+newpath 512.8379 141.9731 moveto
+502.2453 142.1879 lineto
+510.6599 148.6256 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 512.8379 141.9731 moveto
+502.2453 142.1879 lineto
+510.6599 148.6256 lineto
+closepath stroke
+grestore
+% schedule->a_funs
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 500.1024 216.8051 moveto
+486.0271 200.5216 468.1631 178.0106 454.0174 158.9008 curveto
+stroke
+0 0 0 edgecolor
+newpath 456.7311 156.6821 moveto
+448.0061 150.6716 lineto
+451.0786 160.8112 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 456.7311 156.6821 moveto
+448.0061 150.6716 lineto
+451.0786 160.8112 lineto
+closepath stroke
+grestore
+% drone_funs
+gsave
+0.090196 0.22745 1 nodecolor
+newpath 46.8184 322 moveto
+46.8184 322 300.8184 322 300.8184 322 curveto
+306.8184 322 312.8184 328 312.8184 334 curveto
+312.8184 334 312.8184 371 312.8184 371 curveto
+312.8184 377 306.8184 383 300.8184 383 curveto
+300.8184 383 46.8184 383 46.8184 383 curveto
+40.8184 383 34.8184 377 34.8184 371 curveto
+34.8184 371 34.8184 334 34.8184 334 curveto
+34.8184 328 40.8184 322 46.8184 322 curveto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 46.8184 322 moveto
+46.8184 322 300.8184 322 300.8184 322 curveto
+306.8184 322 312.8184 328 312.8184 334 curveto
+312.8184 334 312.8184 371 312.8184 371 curveto
+312.8184 377 306.8184 383 300.8184 383 curveto
+300.8184 383 46.8184 383 46.8184 383 curveto
+40.8184 383 34.8184 377 34.8184 371 curveto
+34.8184 371 34.8184 334 34.8184 334 curveto
+34.8184 328 40.8184 322 46.8184 322 curveto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+138.3184 367.8 moveto 71 (Functions) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 34.8184 360 moveto
+312.8184 360 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+42.8184 344.8 moveto 262 (distance between mission waypoints) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+49.3184 329.8 moveto 249 ( prediction of battery consumption) alignedtext
+grestore
+% drone_funs->a_funs
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 37.3848 321.9653 moveto
+32.282 319.1895 28.2949 316.2031 25.8184 313 curveto
+-7.6188 269.7519 -9.4416 231.7753 25.8184 190 curveto
+66.4304 141.8837 243.6592 127.3167 349.748 122.9093 curveto
+stroke
+0 0 0 edgecolor
+newpath 349.9312 126.4049 moveto
+359.7856 122.5137 lineto
+349.6555 119.4103 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 349.9312 126.4049 moveto
+359.7856 122.5137 lineto
+349.6555 119.4103 lineto
+closepath stroke
+grestore
+% mission
+gsave
+0.33333 0.058824 1 nodecolor
+newpath 46.3184 209.5 moveto
+46.3184 209.5 243.3184 209.5 243.3184 209.5 curveto
+249.3184 209.5 255.3184 215.5 255.3184 221.5 curveto
+255.3184 221.5 255.3184 258.5 255.3184 258.5 curveto
+255.3184 264.5 249.3184 270.5 243.3184 270.5 curveto
+243.3184 270.5 46.3184 270.5 46.3184 270.5 curveto
+40.3184 270.5 34.3184 264.5 34.3184 258.5 curveto
+34.3184 258.5 34.3184 221.5 34.3184 221.5 curveto
+34.3184 215.5 40.3184 209.5 46.3184 209.5 curveto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 46.3184 209.5 moveto
+46.3184 209.5 243.3184 209.5 243.3184 209.5 curveto
+249.3184 209.5 255.3184 215.5 255.3184 221.5 curveto
+255.3184 221.5 255.3184 258.5 255.3184 258.5 curveto
+255.3184 264.5 249.3184 270.5 243.3184 270.5 curveto
+243.3184 270.5 46.3184 270.5 46.3184 270.5 curveto
+40.3184 270.5 34.3184 264.5 34.3184 258.5 curveto
+34.3184 258.5 34.3184 221.5 34.3184 221.5 curveto
+34.3184 215.5 40.3184 209.5 46.3184 209.5 curveto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+116.8184 255.3 moveto 56 (Mission) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 34.3184 247.5 moveto
+255.3184 247.5 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+42.3184 232.3 moveto 205 (sorted list of geocoordinates) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+81.3184 217.3 moveto 127 ( mission progress) alignedtext
+grestore
+% drone_funs->mission
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 166.0469 321.888 moveto
+162.7312 309.2541 158.8124 294.3221 155.2501 280.7484 curveto
+stroke
+0 0 0 edgecolor
+newpath 158.5352 279.4777 moveto
+152.6113 270.6937 lineto
+151.7645 281.2546 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 158.5352 279.4777 moveto
+152.6113 270.6937 lineto
+151.7645 281.2546 lineto
+closepath stroke
+grestore
+% drone_data
+gsave
+0.41569 0.035294 1 nodecolor
+newpath 273.8184 198.5 moveto
+273.8184 281.5 lineto
+405.8184 281.5 lineto
+405.8184 198.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 273.8184 198.5 moveto
+273.8184 281.5 lineto
+405.8184 281.5 lineto
+405.8184 198.5 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+281.8184 236.3 moveto 5 ( ) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 294.8184 198.5 moveto
+294.8184 281.5 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+341.8184 266.3 moveto 17 (ID) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+321.3184 251.3 moveto 58 ( battery) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+307.8184 236.3 moveto 85 ( speed limit) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+302.8184 221.3 moveto 95 ( drone status) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+320.3184 206.3 moveto 60 ( mission) alignedtext
+grestore
+% drone_funs->drone_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 249.9112 321.8447 moveto
+255.0709 319.0662 260.0914 316.1147 264.8184 313 curveto
+275.4029 306.0257 285.8243 297.4596 295.3754 288.6999 curveto
+stroke
+0 0 0 edgecolor
+newpath 297.9646 291.0689 moveto
+302.8352 281.66 lineto
+293.1602 285.978 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 297.9646 291.0689 moveto
+302.8352 281.66 lineto
+293.1602 285.978 lineto
+closepath stroke
+grestore
+% drone_data->a_funs
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 371.1354 198.3911 moveto
+381.0885 185.4849 392.0476 171.2741 401.829 158.5906 curveto
+stroke
+0 0 0 edgecolor
+newpath 404.729 160.5614 moveto
+408.0643 150.5052 lineto
+399.1859 156.2866 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 404.729 160.5614 moveto
+408.0643 150.5052 lineto
+399.1859 156.2866 lineto
+closepath stroke
+grestore
+% battery_funs
+gsave
+0.18571 0.15152 0.90588 nodecolor
+newpath 455.3184 329.5 moveto
+455.3184 329.5 650.3184 329.5 650.3184 329.5 curveto
+656.3184 329.5 662.3184 335.5 662.3184 341.5 curveto
+662.3184 341.5 662.3184 363.5 662.3184 363.5 curveto
+662.3184 369.5 656.3184 375.5 650.3184 375.5 curveto
+650.3184 375.5 455.3184 375.5 455.3184 375.5 curveto
+449.3184 375.5 443.3184 369.5 443.3184 363.5 curveto
+443.3184 363.5 443.3184 341.5 443.3184 341.5 curveto
+443.3184 335.5 449.3184 329.5 455.3184 329.5 curveto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 455.3184 329.5 moveto
+455.3184 329.5 650.3184 329.5 650.3184 329.5 curveto
+656.3184 329.5 662.3184 335.5 662.3184 341.5 curveto
+662.3184 341.5 662.3184 363.5 662.3184 363.5 curveto
+662.3184 369.5 656.3184 375.5 650.3184 375.5 curveto
+650.3184 375.5 455.3184 375.5 455.3184 375.5 curveto
+449.3184 375.5 443.3184 369.5 443.3184 363.5 curveto
+443.3184 363.5 443.3184 341.5 443.3184 341.5 curveto
+443.3184 335.5 449.3184 329.5 455.3184 329.5 curveto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+517.3184 360.3 moveto 71 (Functions) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 443.3184 352.5 moveto
+662.3184 352.5 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+451.3184 337.3 moveto 203 (charge/discharge simulation) alignedtext
+grestore
+% battery_funs->station_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 599.0442 329.4006 moveto
+608.1704 324.4109 617.4929 318.8461 625.8184 313 curveto
+636.2438 305.6793 646.7587 297.1074 656.5654 288.4817 curveto
+stroke
+0 0 0 edgecolor
+newpath 659.1571 290.8587 moveto
+664.2631 281.5754 lineto
+654.4824 285.6483 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 659.1571 290.8587 moveto
+664.2631 281.5754 lineto
+654.4824 285.6483 lineto
+closepath stroke
+grestore
+% battery_funs->drone_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 454.7396 329.4518 moveto
+441.9352 324.8815 429.2941 319.4434 417.8184 313 curveto
+406.0376 306.3853 394.6074 297.6544 384.2932 288.5618 curveto
+stroke
+0 0 0 edgecolor
+newpath 386.3799 285.7274 moveto
+376.636 281.5671 lineto
+381.6587 290.8958 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 386.3799 285.7274 moveto
+376.636 281.5671 lineto
+381.6587 290.8958 lineto
+closepath stroke
+grestore
+% battery_data
+gsave
+0.41569 0.035294 1 nodecolor
+newpath 517.3184 423 moveto
+517.3184 461 lineto
+588.3184 461 lineto
+588.3184 423 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 517.3184 423 moveto
+517.3184 461 lineto
+588.3184 461 lineto
+588.3184 423 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+525.3184 438.3 moveto 5 ( ) alignedtext
+1 setlinewidth
+filled
+0 0 0.41176 nodecolor
+newpath 538.3184 423 moveto
+538.3184 461 lineto
+stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+554.8184 445.8 moveto 17 (ID) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+546.3184 430.8 moveto 34 ( SoC) alignedtext
+grestore
+% battery_data->station_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 588.4401 437.3803 moveto
+619.1852 433.5085 660.4015 426.2783 671.8184 414.5 curveto
+702.9665 382.366 709.3239 330.4753 709.034 291.8019 curveto
+stroke
+0 0 0 edgecolor
+newpath 712.5326 291.6936 moveto
+708.81 281.7743 lineto
+705.5343 291.85 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 712.5326 291.6936 moveto
+708.81 281.7743 lineto
+705.5343 291.85 lineto
+closepath stroke
+grestore
+% battery_data->drone_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 517.0937 440.542 moveto
+491.8634 438.5377 458.469 432.3072 434.8184 414.5 curveto
+394.2261 383.9369 368.8213 330.745 354.6081 291.2916 curveto
+stroke
+0 0 0 edgecolor
+newpath 357.8217 289.8764 moveto
+351.2332 281.5793 lineto
+351.2095 292.1741 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 357.8217 289.8764 moveto
+351.2332 281.5793 lineto
+351.2095 292.1741 lineto
+closepath stroke
+grestore
+% battery_data->battery_funs
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 552.8184 422.8699 moveto
+552.8184 412.1546 552.8184 398.2733 552.8184 385.7465 curveto
+stroke
+0 0 0 edgecolor
+newpath 556.3185 385.6417 moveto
+552.8184 375.6418 lineto
+549.3185 385.6418 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 556.3185 385.6417 moveto
+552.8184 375.6418 lineto
+549.3185 385.6418 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+end
+restore
+%%EOF
