@@ -2,8 +2,8 @@
 
 Mission planner for Unmanned Aerial Vehicle (UAV) battery replacement is the system, whose objective is to plan replacements of the UAV's battery on the static battery management stations. The plan ensures that UAVs have sufficient energy to fulfill their long-term mission, which would otherwise be impossible. 
 
-The appropriate time to withdraw the UAV is sought with a well-known A* algorithm (implemented in `astar.py`).  According to predicted SoC and evaluated costs for flight to battery management platforms, the optimal schedule is sought, which is composed of UAV ID, platform ID, and mission sequence ID (SEQ_ID).
-
+The appropriate time to withdraw the UAV is sought with a well-known A* algorithm implemented in `astar.py`. While the core A* logic is inspired by the work of Nicholas Swift (https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2), the code has been significantly modified to address problem-specific needs.
+  
 !["Structure of Mission Planner Virtual Components](imgs/data-flow-compact.png)
 
 The prediction of discharge rate is acquired based on distances between mission waypoints, the UAV’s velocity, maximum flight time, and initial SoC. The cost of battery replacement is determined by the predicted UAV battery drain during its flight to the platform and back to the mission. The task is further limited by a fixed number of charged batteries in the platforms. The mission planner also performs a calculation of the expected flight time to the platform, based on which a time slot is entered into the schedule with a safe time reserve to avoid UAV collisions near the platform. The process of planning with A* is depicted in the following figure:
